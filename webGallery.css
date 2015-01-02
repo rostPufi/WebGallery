@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1100px;
+  padding: 0;
+  min-width: 670px;
+  text-align: center; }
+  body ul {
+    list-style-type: none;
+    overflow: auto;
+    margin: 0;
+    padding: 0; }
+    body ul li {
+      display: inline-block; }
+      body ul li input[type="radio"] {
+        visibility: hidden; }
+      body ul li label img {
+        width: 130px;
+        height: 130px;
+        border: 2px solid black; }
+      body ul li label div {
+        width: 400px;
+        height: 400px;
+        position: fixed;
+        top: 30px;
+        left: 29%;
+        margin-top: 150px; }
+        body ul li label div img {
+          width: 400px;
+          height: 400px;
+          position: fixed;
+          margin-left: 100px;
+          display: none; }
+      body ul li input[type="radio"]:checked + label img {
+        border: 2px solid green;
+        opacity: 0.6; }
+      body ul li input[type="radio"]:checked + label div img {
+        display: block;
+        opacity: 1;
+        border: none; }
+
